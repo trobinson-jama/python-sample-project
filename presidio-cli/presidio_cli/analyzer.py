@@ -25,6 +25,7 @@ class Line(object):
 
         return self.buffer[self.start : self.end]  # noqa
 
+
 # @verifies RRD-SREQ-17
 def line_generator(buffer: str) -> Generator[Line, None, None]:
     """Generate Line objects from text source. Returns a generator of Line objects.
