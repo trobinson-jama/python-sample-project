@@ -4,10 +4,11 @@ from presidio_analyzer import RecognizerResult
 
 from presidio_cli.config import PresidioCLIConfig
 
-
+# @description This is a sample description for the Line class
 class Line(object):
     """Represents a line of text source."""
 
+    # @satisfies RRD-SREQ-5, RRD-SREQ-6
     def __init__(self, line_no: int, buffer: str, start: int, end: int) -> None:
         self.line_no = line_no
         self.start = start
