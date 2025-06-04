@@ -23,7 +23,7 @@ class Line(object):
         :returns: The encrypted text.
         """
 
-        return self.buffer[self.start : self.end]  # noqa
+        return self.buffer[self.start : self.end]
 
 
 # @verifies RRD-SREQ-17
